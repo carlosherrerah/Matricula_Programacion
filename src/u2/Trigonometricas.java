@@ -1,5 +1,5 @@
 package u2;
-import static u2.Funciones.*;
+import static mate.Funciones.*;
 
 public class Trigonometricas {
 
@@ -16,8 +16,8 @@ public class Trigonometricas {
     r = Math.sin(g2r(45));
     System.out.println(r);
 
-    r = Math.acos(r2g(0.7071));
-  }
+    r= 0.7071;
+    System.out.println(r2g(Math.asin(r)));
 
-  
+  }
 }
