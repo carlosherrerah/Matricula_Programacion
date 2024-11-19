@@ -23,6 +23,8 @@ public class Matrices {
     int[][] b = new int [f][c];
     int[][] r = new int [f][c];
 
+    System.out.println(a);
+
     // llenar b con valores aleatorios
     for (int i = 0; i < f; i++) {
       for (int j = 0; j < b[0].length; j++) {
