@@ -20,7 +20,7 @@ public class ReadWriteCSV {
     String filePathSource = "src/u4/Pacientes.csv";
     String filePathTarget = "src/u4/Enfermos200.csv";
 
-    String PATRON = "yyyy-MM-dd"; // yyyy-MM-dd HH:mm:ss   yyyy-MM-dd'T'HH:mm:ss   
+    String PATRON = "dd/MM/yyyy"; // yyyy-MM-dd HH:mm:ss   yyyy-MM-dd'T'HH:mm:ss   
     DateTimeFormatter DTF = DateTimeFormatter.ofPattern(PATRON);
 
     List<Dato> leidos = new ArrayList<>();
@@ -61,6 +61,7 @@ public class ReadWriteCSV {
     for (Dato elemento : leidos) {
       System.out.println(elemento.id + " : " + elemento.apellidos + " : " + elemento.fecha);
     }
+    System.out.println("Fin del programa");
 
   }
 
